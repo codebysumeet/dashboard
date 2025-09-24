@@ -2,7 +2,7 @@
 .dashboard-container {
   display: flex;
   height: 100vh;
-  background: linear-gradient(to right, #f9fafb, #f3f4f6);
+  background: url("/src/assets/background.jpeg"); /* optional background image */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
