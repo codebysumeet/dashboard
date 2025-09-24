@@ -38,7 +38,6 @@ function Dashboard() {
   return (
     <div className="dashboard-container">
       
-      {/* Sidebar */}
       <aside className="dashboard-sidebar">
         <h2 className="sidebar-title">🌾 Agri Admin</h2>
         <nav className="sidebar-nav">
@@ -50,10 +49,9 @@ function Dashboard() {
         </nav>
       </aside>
 
-      {/* Main */}
       <main className="dashboard-main">
-        
-        {/* Header */}
+      
+
         <header className="dashboard-header">
           <h1 className="header-title">📊 Dashboard</h1>
           <div className="header-right">
@@ -62,14 +60,12 @@ function Dashboard() {
           </div>
         </header>
 
-        {/* Firestore Button */}
         <div className="btn-wrapper">
           <button onClick={writeData} className="btn-firestore">
             ➕ Add City to Firestore
           </button>
         </div>
 
-        {/* Cards */}
         <section className="dashboard-cards">
           <div className="dashboard-card blue">1,250<br /><span>Registered Users</span></div>
           <div className="dashboard-card green">780<br /><span>Supported Crops</span></div>
@@ -79,9 +75,7 @@ function Dashboard() {
           <div className="dashboard-card purple">₹3,50,000<br /><span>Revenue</span></div>
         </section>
 
-        {/* Charts */}
         <section className="dashboard-charts">
-          {/* Line Chart */}
           <div className="chart-card">
             <h2 className="chart-title">🌱 Yield Forecast Trends</h2>
             <ResponsiveContainer width="100%" height={280}>
@@ -96,7 +90,6 @@ function Dashboard() {
             </ResponsiveContainer>
           </div>
 
-          {/* Pie Chart */}
           <div className="chart-card">
             <h2 className="chart-title">🌍 Soil Type Distribution</h2>
             <ResponsiveContainer width="100%" height={280}>
