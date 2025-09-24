@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/src/assets/p1.jpg"); /* optional background image */
+  background: url("/src/assets/background.jpeg"); /* optional background image */
   padding: 20px;
 }
 
