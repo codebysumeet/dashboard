@@ -24,51 +24,42 @@ function Login() {
   };
 
   return (
-    <div
-      className="min-h-screen"
-    >
-      <div className="bg-white border-white/30 shadow-xl rounded-2xl p-10 w-full max-w-md">
-        <h1 className="text-4xl font-bold text-green-900 text-center mb-2">
-          🌱 Agri Portal
-        </h1>
-        <p className="text-green-800 text-center mb-8">
-          Connecting Farmers with Technology
-        </p>
+    <div className="login-container">
+      <div className="login-box">
+        <h1 className="login-title">🌱 Agri Portal</h1>
+        <p className="login-subtitle">Connecting Farmers with Technology</p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-          <div>
-            <input type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="px-4 py-3 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-500"
-          /></div>
-
-          <div>
+        <form onSubmit={handleSubmit} className="login-form">
+          <div className="form-group">
             <input
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="px-4 py-3 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-500"
-          /></div>
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="input-field"
+            />
+          </div>
 
-          <button
-            type="submit"
-            className="py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold rounded-lg transition-transform transform hover:scale-105 shadow-md"
-          >
+          <div className="form-group">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="input-field"
+            />
+          </div>
+
+          <button type="submit" className="btn-login">
             Login
           </button>
         </form>
 
-        <p className="mt-6 text-green-900 text-center">
+        <p className="signup-text">
           Don’t have an account?{" "}
-          <Link
-            to="/signup"
-            className="text-green-700 font-semibold hover:underline"
-          >
+          <Link to="/signup" className="signup-link">
             Sign Up
           </Link>
         </p>

@@ -1,12 +1,10 @@
-/* Layout */
 .dashboard-container {
   display: flex;
   height: 100vh;
-  background: url("/src/assets/background.jpeg"); /* optional background image */
+  background: url("/background.jpeg");
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Sidebar */
 .dashboard-sidebar {
   width: 250px;
   background: linear-gradient(to bottom, #1e3a8a, #1d4ed8);
@@ -41,14 +39,13 @@
   background: rgba(255,255,255,0.2);
 }
 
-/* Main */
 .dashboard-main {
   flex: 1;
   padding: 30px;
   overflow-y: auto;
 }
 
-/* Header */
+
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -87,7 +84,7 @@
   box-shadow: 0 4px 12px rgba(239,68,68,0.4);
 }
 
-/* Firestore Button */
+
 .btn-wrapper {
   margin-bottom: 30px;
 }
@@ -107,7 +104,7 @@
   box-shadow: 0 4px 12px rgba(21,128,61,0.4);
 }
 
-/* Cards */
+
 .dashboard-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -137,7 +134,7 @@
   transform: translateY(-6px);
 }
 
-/* Card Colors */
+
 .dashboard-card.blue { background: linear-gradient(to right, #3b82f6, #1d4ed8); }
 .dashboard-card.green { background: linear-gradient(to right, #22c55e, #15803d); }
 .dashboard-card.red { background: linear-gradient(to right, #ef4444, #b91c1c); }
@@ -145,7 +142,7 @@
 .dashboard-card.yellow { background: linear-gradient(to right, #eab308, #ca8a04); }
 .dashboard-card.purple { background: linear-gradient(to right, #a855f7, #7e22ce); }
 
-/* Charts */
+
 .dashboard-charts {
   display: grid;
   grid-template-columns: 1fr 1fr;
